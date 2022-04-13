@@ -1,0 +1,66 @@
+<!--Create these 2 files:
+
+ An html file (the form) to collect user data (10 points)
+A PHP file to process it. Use the Post method (15 points)
+The form needs to include:
+
+1 (or more) text box
+1 drop-down list
+3 check boxes at least
+3 radio buttons
+Note: Make sure to check if no check boxes were selected before attempting to display them. A good way to display the contents of the checkboxes is to handle them in an array, and have the processing script to go thru the array using a foreach loop. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>Transportation Survey</h1>
+
+<form action="MyForm.php" method="get" >
+
+<fieldset>
+    Name  
+    <input type="text" name="fname"method="get"> 
+    <br><br>
+</fieldset>
+
+<fieldset>
+What are your packing options?  
+  <br>
+  <input type="radio" name="suitcase" value="Light Suitcase" checked>
+  Light Suitcase</label><br>
+  <input type="radio" name="suitcase" value="Average Sized Suitcase">
+  Average Sized Suitcase<br>
+  <input type="radio" name="suitcase" value="Large Suitcase">
+  Large Suitcase</label>
+  <br><br>
+</fieldset>
+
+<fieldset>
+  Favorite Distances to travel?  
+    <br>
+  <input type="checkbox" name="Distance" value="SD"> Short Distance<br>
+  <input type="checkbox" name="Distance" value=" MD"> Middle Distance<br>
+  <input type="checkbox" name="Distance" value="LD"> Long Distance
+  <br><br>
+</Fieldset>
+
+<fieldset>
+  <label for="cars">Favorite Type of Transportation:</label>
+  <select name="Transportation">
+    <option value="car">car</option>
+    <option value="train">train</option>
+    <option value="plane">plane</option>
+  </select>
+</fieldset>
+  <br><br>
+
+  <input type="Submit" name="Submit" value="Submit">
+
+</form>
+
+</body>
+</html>
+
