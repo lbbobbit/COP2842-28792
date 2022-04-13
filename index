@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Run Time Average</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <main>
+        <h1>Run Time Average</h1>
+        <form action="assignment2.php" method="post">
+
+            <div id="data">
+                <label>Name:</label>
+                <input type="text" name="name"><br>
+
+                <label>First Run:</label>
+                <input type="text" name="first_run"><br>
+
+                <label>Second Run:</label>
+                <input type="text" name="second_run"><br>
+
+                <label>Third Run:</label>
+                <input type="text" name="third_run"><br>
+
+                <label>Fourth Run:</label>
+                <input type="text" name="fourth_run"><br>
+
+            </div>
+
+            <div id="buttons">
+                <label>Calculate Run Average</label>
+                <input type="submit" value="Calculate Average"><br>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
